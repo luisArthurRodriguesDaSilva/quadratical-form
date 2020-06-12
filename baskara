@@ -1,0 +1,69 @@
+#include <iostream>
+#include  <cmath>
+using namespace std;
+
+double a, b, c, z, delta, resultadomais , resultadomenos;
+
+int sinalA, sinalB, sinalC, sinalZ;
+ 
+
+int main(){
+	while (true)//aaaaaaaaaaaaaaaa bbbbbbbbbbbbbbbbbbbbbb c
+	{
+
+
+		cout << "a:"; cin >> a; cout << endl;
+		cout << "b:"; cin >> b; cout << endl;
+		cout << "c:"; cin >> c; cout << endl;
+		cout << "z:"; cin >> z; cout << endl;
+
+
+	/*	if (a < 0) { sinalA = '-'; }
+		else { sinalA = '+'; }
+
+		if (b < 0) { sinalB = '-'; }
+		else { sinalB = '+'; }
+										deu errado isso aki
+		if (c< 0) { sinalC = '-'; }
+		else { sinalC = '+'; }
+
+		if (z < 0) { sinalZ = '-'; }
+		else { sinalZ = '+'; }*/
+
+		if(c>0){
+			if (b > 0) {
+				cout << "funcao:" << a << "x*x" << "+" << b << "x" << "+" << c << "=" << z;
+		}
+			else { cout << "funcao:" << a << "x*x" << b << "x" << "+" << c << "=" << z; }
+		}
+		
+		
+		else {
+			if (b > 0) {
+				cout << "funcao:" << a << "x*x" << "+" << b << "x" << c << "=" << z;
+			}
+			else { cout << "funcao:" << a << "x*x" << b << "x" << c << "=" << z; }
+		}
+
+		cout << endl;
+
+		delta = ((b * b) - 4 * a * (c - z));
+
+		
+		resultadomais = (sqrt(delta) - b) / 2 * a;
+		resultadomenos = (sqrt(delta) + b) * (-1) / (2 * a);
+
+		cout << endl;
+
+
+		
+
+			cout << endl;
+			cout << "x1:" << resultadomais << endl;
+			cout << "x2:" << resultadomenos << endl;
+			cout << endl;
+
+	
+
+	}
+}
